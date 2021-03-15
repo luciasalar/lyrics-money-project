@@ -1,3 +1,40 @@
+# Files and folders
+
+### script
+musicbrainz.py search author list on *musicbrainz*
+
+get_lyrics_by_author.py search lyrics by author using *LyricsGenus*
+
+### parameters
+
+all the parameters (search criteria) we used are in parameters.yaml
+
+
+# Collect artist list
+
+musicbrainz.py
+***Musicbrainz***
+
+Documentation: https://python-musicbrainzngs.readthedocs.io/en/latest/api/
+
+Musicbrainz allows you to search the database according to many variables, such as tags. 
+
+Check the tags and search combination in https://musicbrainz.org/tags
+
+**However, the filter function doesn't seem to work well in musicbrainz**
+
+For example:
+
+* Tag search doesn't work well in search_recordings
+
+I added filter list to refilter artist tags because I found the filter function in the api has a lot of missing cases, rock singers are often included in the list when I try to retrieve rap singers only.
+
+* Filter country also has lots of missing cases
+
+* Depends on what variables you want to get, we can retrieve more data if we do not filter out born year. (Need to discuss)
+
+
+
 #Collect Lyrics
 
 We are using the lyricsgenius lib to query the API:
@@ -20,3 +57,12 @@ The solution automates the task of creating the list of artists, one way being t
 So I guess the easiest way is to get a list of artist. I think this is the list of artists and songs Becky compiled last time.
 
 https://docs.google.com/spreadsheets/d/1QahDHH0Ls39FWFmDoocXQqkiFMtz2sU_9NoxoqPu3Mk/edit?usp=sharing
+
+
+
+
+
+
+
+
+
