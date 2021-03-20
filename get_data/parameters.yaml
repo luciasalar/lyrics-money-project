@@ -1,7 +1,6 @@
 settings1:
     outputFile: 'artist_list_rap'  #name of the output file
     tag: 'rap' #search by tags
-    #country: 'US' # search by countries
     filter_tags: 'rap, r&b, hip hop, hip-hop, rnb' #filters tags for search 
 
 
