@@ -1,5 +1,11 @@
-settings:
-    outputFile: 'artist_list_rap_US_filtered3'  #name of the output file
+settings1:
+    outputFile: 'artist_list_rap'  #name of the output file
     tag: 'rap' #search by tags
-    country: 'US' # search by countries
-    filter_tags: 'rap, r&b, hip hot, hip-hot, rnb' #filters tags for search results
+    #country: 'US' # search by countries
+    filter_tags: 'rap, r&b, hip hop, hip-hop, rnb' #filters tags for search 
+
+
+settings2:
+    outputFile: 'artist_list_hip_hop'  #name of the output file
+    tag: 'hip hop' #search by tags
+    filter_tags: 'hip hop, hip-hop' #filters tags for search results
