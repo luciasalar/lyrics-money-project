@@ -1,0 +1,80 @@
+---
+title: "artist_stats"
+author: "lushi"
+date: "20/03/2021"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+require(ggplot2)
+```
+
+# Basic stats for the hip hop artist list 
+
+Here you can change the artist list
+```{r readfile}
+setwd('/Users/lucia/Desktop/')
+artist_file <- read.csv('artist_list_setting2_tags.csv')
+artist_file <- artist_file[!duplicated(artist_file$artist_id),]
+```
+
+
+
+##gender
+```{r gender, echo=FALSE}
+gender <- table(artist_file$gender)
+print(gender)
+```
+
+gender annotation is not available in `r gender[1]` artists, female only account for `r (gender[1]/(gender[1]+gender[2]))*100`% of the labeled data 
+
+
+## country
+```{r country, echo=FALSE}
+country <- table(artist_file$country)
+print(country)
+```
+Country annotation is not available in `r country[1]` artists
+
+
+
+##artist type
+```{r artist, echo=FALSE}
+type <- table(artist_file$artist_type)
+print(type)
+```
+
+
+##birth year
+Here you can see the birth year of the artists
+```{r birth, echo=FALSE}
+artist_file$birth <- sapply(strsplit(as.character(artist_file$begin),"-"), `[`, 1)
+
+birth <- table(artist_file$birth)
+print(birth)
+birth_df <- as.data.frame(birth)
+colnames(birth_df) <- c('year','frequency')
+
+#ggplot(birth_df, aes(x=year, y=frequency)) + 
+#  geom_density(alpha=.2, fill="#FF6666") 
+    #geom_histogram(aes(y=frequency), binwidth=.5,
+                   #colour="black", fill="white") +
+    
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
