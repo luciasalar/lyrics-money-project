@@ -9,6 +9,16 @@ get_lyrics_by_author.py search lyrics by author using *LyricsGenus*
 
 all the parameters (search criteria) we used are in parameters.yaml
 
+# DATA 
+
+artist_list_all_tags.csv: artist list, max count (the most frequent tag of an artist), max_count(the number of the most frequent tag), begin (birthday)
+
+### lyrics file
+hiphop_lyrics_partial.csv
+
+hip_hop_artist_manysongs_lyrics.csv  (artists with many songs)
+
+hip_hop_artist_all_lyrics.csv  (lyrics from all hiphop artists)
 
 # Collect artist list
 
@@ -33,6 +43,11 @@ I added filter list to refilter artist tags because I found the filter function 
 
 * Depends on what variables you want to get, we can retrieve more data if we do not filter out born year. (Need to discuss)
 
+# Get other variables from json file
+
+The data is also stored json dump, you can retrieve other variables, such as **tags** in the json file
+
+musicbrainz.py
 
 
 #Collect Lyrics
@@ -57,6 +72,29 @@ The solution automates the task of creating the list of artists, one way being t
 So I guess the easiest way is to get a list of artist. I think this is the list of artists and songs Becky compiled last time.
 
 https://docs.google.com/spreadsheets/d/1QahDHH0Ls39FWFmDoocXQqkiFMtz2sU_9NoxoqPu3Mk/edit?usp=sharing
+
+
+#TOPICS
+
+getting topics with lyrics: topic_model2.py
+
+We can filter lyrics according to artist gender, year ...
+
+We obtain N topics from the lyrics, what information we have for topic?
+
+lda_result_test.csv (result file: data/result) *coherence score measures how coherence the cluster is*
+
+* We obtain values to represent the topics in each song. For example, song 1 contain: 0.01 Topic1...0.3 Topic 2
+
+dominance_test.csv
+
+* We obtain the dominant topic for each song
+
+domance_output_test.csv   (result file: data/result)
+
+
+
+
 
 
 

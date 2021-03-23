@@ -19,6 +19,7 @@ Here you can change the artist list
 setwd('/Users/lucia/Desktop/')
 artist_file <- read.csv('artist_list_setting2_tags.csv')
 artist_file <- artist_file[!duplicated(artist_file$artist_id),]
+
 ```
 
 

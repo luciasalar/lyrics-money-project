@@ -280,14 +280,12 @@ class GetOtherInfo:
         file2 = pd.read_csv(path + file2_name)
 
         all_file = pd.merge(file1, file2, on='artist_id', how='inner')
+        all_file = all_file.drop_duplicates(subset=['artist_id'])
 
         all_file.to_csv(path + outputFile, encoding='utf-8-sig')
 
         return all_file
         
-
-
-
 
 script_path = '/disk/data/share/s1690903/Lyrics_project_git/get_data/'
 outputP = '/disk/data/share/s1690903/Lyrics_project_git/data/'
@@ -299,8 +297,8 @@ musicbrainzngs.set_useragent("Audacious", "0.1", "https://github.com/jonnybarnes
 
 cr = CollectReplies(outputP=outputP, outputFile=outputFile, tag=env['settings2']['tag'], country=None, filter_tags=env['settings2']['filter_tags'])
 
-result = cr.loop_file_artist()
-#result = musicbrainzngs.search_artists(query='', limit=10, offset=200, strict=False, tag='hip hop', country='US')
+#result = cr.loop_file_artist()
+result = musicbrainzngs.search_artists(query='E40', limit=2, offset=20, strict=False, tag='hip hop', country='US')
 
 
 ####get other variables
@@ -308,9 +306,9 @@ inputFile_json = 'artist_list_setting2.json'
 outputFile_newVar = 'tags.csv'
 other = GetOtherInfo(inputP=outputP, outputP=outputP, inputFile=inputFile_json, outputFile_newVar=outputFile_newVar)
 
-tags = other.get_tags()
+#tags = other.get_tags()
 
-other.merge_files(path=outputP, file1_name='tags.csv', file2_name='artist_list_setting2.csv', outputFile='artist_list_setting2_tags.csv')
+#other.merge_files(path=outputP, file1_name='tags.csv', file2_name='artist_list_setting2.csv', outputFile='artist_list_setting2_tags.csv')
 
 
 
