@@ -20,6 +20,15 @@ hip_hop_artist_manysongs_lyrics.csv  (artists with many songs)
 
 hip_hop_artist_all_lyrics.csv  (lyrics from all hiphop artists)
 
+# Data source
+
+* we retrieve artist lists from Musicbrainz (two search criteria) (N = 3787)
+
+* wikipedia hip-hop artist list https://en.wikipedia.org/wiki/List_of_hip_hop_musicians  (N = 1455, 943 different from MusicBrainz)
+
+* merge two lists (N = 4726)
+
+
 # Collect artist list
 
 musicbrainz.py
