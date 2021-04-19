@@ -1,0 +1,1 @@
+nice python '/disk/data/share/s1690903/Lyrics_project_git/topic_model2.py'
