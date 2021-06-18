@@ -95,8 +95,15 @@ So I guess the easiest way is to get a list of artist. I think this is the list 
 
 https://docs.google.com/spreadsheets/d/1QahDHH0Ls39FWFmDoocXQqkiFMtz2sU_9NoxoqPu3Mk/edit?usp=sharing
 
+# Analysis 
 
-#TOPICS
+## plot word count
+
+plot_words.py: plot occurence of single/multiple words over years
+
+plots stored in: data/result/plots
+
+## TOPICS
 
 getting topics with lyrics: topic_model2.py
 
