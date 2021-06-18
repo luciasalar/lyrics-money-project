@@ -13,6 +13,17 @@ all the parameters (search criteria) we used are in parameters.yaml
 
 artist_list_all_tags.csv: artist list, max count (the most frequent tag of an artist), max_count(the number of the most frequent tag), begin (birthday)
 
+### artist list 
+
+rapper list from music brainz:
+
+hiphop_rap.csv
+
+wikipedia artist list:
+
+wikipedia_hiphop_artists.csv
+
+
 ### lyrics file
 hiphop_lyrics_partial.csv
 
