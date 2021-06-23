@@ -1,6 +1,6 @@
 # Dataset description
 
-**lyrics file**
+##lyrics file
 
 all_lyrics.csv: file for all collected lyrics
 
@@ -10,7 +10,7 @@ We collected 4726 artists from musicbrainz and wikipedia, and we manage to colle
 dupilcated lyrics are removed, which means that I only retain one copy of the songs remake by multiple singers if the lyrics are exactly the same
 
 
-variables:
+###variables:
 
 artist_id: unique id for the artist
 
@@ -26,7 +26,9 @@ year: song publish date
 **Number of song each artist**
 artist_song_count.csv
 
-**plot number of songs by year**
+**plot number of songs we collected by year**
+https://drive.google.com/file/d/16iOPQCirmRfC8MXdvVQdl4XpuMOKvfYI/view?usp=sharing
+
 
 # plots 
 We plot lyrics with publish date and publish date > 1989
