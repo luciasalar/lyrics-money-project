@@ -1,9 +1,10 @@
 # Introduction
 
 This repo contains data collection and data analysis for the lyrics project.
-step 1: We collected artist names from the website **Musicbrainz** (an open music encyclopedia that collects music metadata) and **Wikipedia** hip-hop artist list. Then we collected lyrics from **Genius.com**
 
-step 2: Data analysis
+**Step 1**: We collected artist names from the website **Musicbrainz** (an open music encyclopedia that collects music metadata) and **Wikipedia** hip-hop artist list. Then we collected lyrics from **Genius.com**
+
+**Step 2**: Data analysis
 Topic analysis
 
 ## Artist List Source
