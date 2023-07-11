@@ -1,3 +1,15 @@
+# Introduction
+
+We collected artist names from the website **Musicbrainz** (an open music encyclopedia that collects music metadata) and **Wikipedia** hip-hop artist list. Then we collected lyrics from **Genius.com**
+
+# Artist List Source
+
+* we retrieve artist lists from Musicbrainz (two search criteria) (N = 3787)
+
+* wikipedia hip-hop artist list https://en.wikipedia.org/wiki/List_of_hip_hop_musicians  (N = 1455, 943 different from MusicBrainz)
+
+* merge two lists (N = 4726)
+
 # Files and folders
 
 ### script
@@ -32,14 +44,6 @@ hip_hop_artist_manysongs_lyrics.csv  (artists with many songs)
 hip_hop_artist_all_lyrics.csv  (lyrics from all hiphop artists)
 
 hip_hop_artist_all_lyrics3.csv (lyrics from hiphop artists on wikipedia, this list contain 944 artists, but we only manage to retrieve songs from 330 artists)
-
-# Data source
-
-* we retrieve artist lists from Musicbrainz (two search criteria) (N = 3787)
-
-* wikipedia hip-hop artist list https://en.wikipedia.org/wiki/List_of_hip_hop_musicians  (N = 1455, 943 different from MusicBrainz)
-
-* merge two lists (N = 4726)
 
 
 # Collect artist list
